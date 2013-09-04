@@ -56,4 +56,11 @@ var app = {
 
     },
     
+    app.db = window.openDatabase("scannerDB","1.0","Scanner DB",1000000);
+    app.db.transaction(
+    		function(tx){
+    			tx.executeSql('CREATE TABLE IF NOT EXISTS CODES(id INTEGER PRIMARY KEY AUTOINCREMENT,data,format)');
+    		}
+    	),
+    
 };
