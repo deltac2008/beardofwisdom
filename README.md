@@ -1,4 +1,4 @@
 beardofwisdom
 =============
 
-Android development
+Android development with PhoneGap.
